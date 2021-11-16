@@ -103,7 +103,7 @@ add_executable(${OUT_FILE} ${app_srcs})
 
 #-fno-optimize-sibling-calls
 
-set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -DDEBUG=1")
+#set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -DDEBUG=1")
 
 if(EMSCRIPTEN OR EMSCRIPTEN_LIB)
 
