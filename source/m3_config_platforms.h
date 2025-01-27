@@ -132,6 +132,7 @@ typedef int8_t          i8;
  * Apply settings
  */
 
+#if 0
 # if defined (M3_COMPILER_MSVC)
 #   define vectorcall   // For MSVC, better not to specify any call convention
 # elif defined(__x86_64__)
@@ -155,6 +156,7 @@ typedef int8_t          i8;
 # elif defined (FOMU)
 #   define vectorcall   __attribute__((section(".ramtext")))
 # endif
+#endif
 
 #ifndef vectorcall
 #define vectorcall
